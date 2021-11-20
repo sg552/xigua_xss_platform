@@ -7,9 +7,6 @@ Rails.application.routes.draw do
   post '/x', to: 'logs#create'
   resources :logs do
     collection do
-    #  get 'x'
-    #  post 'x'
-    #  put 'x'
     end
   end
 end
