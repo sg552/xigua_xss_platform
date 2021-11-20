@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  # don't visit / , visit /logs instead
+  root 'logs#fake_index'
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get '/x', to: 'logs#x'
+  post '/x', to: 'logs#create'
+  resources :logs do
+    collection do
+    #  get 'x'
+    #  post 'x'
+    #  put 'x'
+    end
+  end
 end

@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_232248) do
+ActiveRecord::Schema.define(version: 2021_11_19_233335) do
+
+  create_table "logs", charset: "utf8", force: :cascade do |t|
+    t.string "controller"
+    t.string "action"
+    t.string "remote_ip", comment: "远程ip"
+    t.string "restful_method", comment: "请求的方法,  get/post..."
+    t.string "user_name", comment: "当前用户"
+    t.text "parameters", comment: "各种参数"
+    t.text "full_request", comment: "完整的request, 带有header, cookie等"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "email", default: "", null: false

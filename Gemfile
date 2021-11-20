@@ -10,6 +10,7 @@ gem 'webpacker', '5.4.3'
 gem 'jbuilder', '2.11.3'
 gem 'bootsnap', '1.9.1', require: false
 gem 'devise', '4.8.0'
+gem 'kaminari', '1.2.1'
 
 group :development do
   gem 'rack-mini-profiler', '2.3.3'
