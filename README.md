@@ -11,14 +11,14 @@ features:
 ## 需要
 
 - 一个短域名
-- 一个短信收发token
+- 阿里云短信收发api, secret
+- linux (ubuntu 18, mysql)
 
-## 部署
+## 部署(需要具备基本的rails知识)
 
 - ruby 2.5.8
 - yarn
 - mysql
-
 
 - gem install bundler
 - bundle install --verbose
@@ -31,3 +31,27 @@ features:
 
 即可
 
+
+## 用法
+
+访问：
+
+![](https://files.sweetysoft.com/blog_images/from_paste_20211120_095859.png)
+
+列表：
+
+![](https://files.sweetysoft.com/blog_images/from_paste_20211120_095440.png)
+
+默认页面是 一个假的 500 页面：
+
+![](https://files.sweetysoft.com/blog_images/from_paste_20211120_095607.png)
+
+可以登录：
+
+![](https://files.sweetysoft.com/blog_images/from_paste_20211120_095632.png)
+
+支持短信：
+
+![](https://files.sweetysoft.com/blog_images/from_paste_20211120_095726.png)
+
+## 记得及时把注册功能去掉哦~
