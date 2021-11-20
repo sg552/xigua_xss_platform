@@ -17,17 +17,24 @@ features:
 ## 部署(需要具备基本的rails知识)
 
 - ruby 2.5.8
+- node > 14
 - yarn
 - mysql
 
 - gem install bundler
 - bundle install --verbose
 - cp config/database.yml.example config/database.yml
-- ..以及 log4r,  settings.yml等
+- ..以及 log4r,  application.yml等
 - bundle exec rake db:create
 - bundle exec rake db:migrate
 - bundle exec rails webpacker:install
+- RAILS_ENV=production bundle exec rake assets:precompile
+
+开发模式：
 - bundle exec rails server
+
+生产模式：
+- bundle exec puma  -e production
 
 即可
 
