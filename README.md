@@ -1,6 +1,7 @@
 # 说明
 
 Xigua XSS platform, a XSS platform based on Rails 6.
+
 为啥叫xigua？ 因为西瓜x开头。
 
 features:
@@ -14,15 +15,15 @@ features:
 - 阿里云短信收发api, secret
 - linux (ubuntu 18, mysql)
 
-##（可选）
+##（可选） 对于Linux小白，请这样做：
 
-对于Linux小白，请这样做：
 - 购买一个ubuntu 18
 - 登录控制台（ssh方式)
 - apt update
 - apt install curl git
 - apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev libdb-dev uuid-dev
 - apt install libapr1-dev libxml2-dev libxslt1-dev libmysqlclient-dev git curl build-essential libssl-dev libreadline-dev build-essential libssl-dev libreadline-dev vim libcurl4 ruby-dev zlib1g-dev liblzma-dev ruby-all-dev
+
  默认你的mysql是root登录，没有密码的
 
 
